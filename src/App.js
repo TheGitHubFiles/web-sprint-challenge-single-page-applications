@@ -21,6 +21,7 @@ function App() {
         console.log(err)
       })
   }
+  console.log(order)
   return (
     <>
       <h1>Lambda Eats</h1>
