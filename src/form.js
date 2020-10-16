@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as yup from 'yup';
 import styled from 'styled-components'
 import notToday from './schema.js'
+import { Link } from 'react-router-dom'
 
 const StyledForm = styled.div`
     display: flex;
@@ -137,6 +138,9 @@ export default function Form(props) {
                         type='text'>
                     </input>
                 </label>
+                <Link to='/'>
+                    <button>Back to home</button>
+                </Link>
                 <button name='submit' disabled={disabled}>Add to Order</button>
             </form>
             <div className='red'>
